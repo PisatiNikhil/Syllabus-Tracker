@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Course | Course Syllabus Tracking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<span class="brand">Syllabus Tracker</span>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a class="active" href="create-course.html">Create Course</a></li>
+<li><a href="units.html">Units</a></li>
+<li><a href="progress.html">Progress</a></li>
+</ul>
+</nav>
+
+<header class="hero">
+<h1>Create a Subject Course</h1>
+<p>Enter the course details and define up to five units with their subtopics.</p>
+</header>
+
+<main>
+<section class="card">
+<div id="form-message"></div>
+
+<form id="course-form">
+
+<div class="form-group">
+<label for="course-name">Course Name</label>
+<input type="text" id="course-name" placeholder="e.g. Data Structures">
+</div>
+
+<div class="form-group">
+<label for="course-code">Course Code</label>
+<input type="text" id="course-code" placeholder="e.g. CSE326">
+</div>
+
+<div class="form-group">
+<label for="teacher">Teacher Name</label>
+<input type="text" id="teacher" placeholder="e.g. Dr. Sharma">
+</div>
+
+<div class="form-group">
+<label for="unit1">Unit 1</label>
+<input type="text" id="unit1" placeholder="Unit name">
+<textarea id="subtopics1" placeholder="Subtopics, separated by commas"></textarea>
+</div>
+
+<div class="form-group">
+<label for="unit2">Unit 2</label>
+<input type="text" id="unit2" placeholder="Unit name">
+<textarea id="subtopics2" placeholder="Subtopics, separated by commas"></textarea>
+</div>
+
+<div class="form-group">
+<label for="unit3">Unit 3</label>
+<input type="text" id="unit3" placeholder="Unit name">
+<textarea id="subtopics3" placeholder="Subtopics, separated by commas"></textarea>
+</div>
+
+<div class="form-group">
+<label for="unit4">Unit 4</label>
+<input type="text" id="unit4" placeholder="Unit name">
+<textarea id="subtopics4" placeholder="Subtopics, separated by commas"></textarea>
+</div>
+
+<div class="form-group">
+<label for="unit5">Unit 5</label>
+<input type="text" id="unit5" placeholder="Unit name">
+<textarea id="subtopics5" placeholder="Subtopics, separated by commas"></textarea>
+</div>
+
+<button type="submit" class="btn">Save Course</button>
+<br><br>
+<button class="btn" id="delete-course-btn" type="button" style="background:#b02a20;">Delete Course</button>
+</form>
+</section>
+</main>
+
+<footer>
+  <p>Course Syllabus Tracking System</p>
+  </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>

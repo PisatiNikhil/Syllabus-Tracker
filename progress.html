@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress | Course Syllabus Tracking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<span class="brand">Syllabus Tracker</span>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="create-course.html">Create Course</a></li>
+<li><a href="units.html">Units</a></li>
+<li><a class="active" href="progress.html">Progress</a></li>
+</ul>
+</nav>
+
+<header class="hero">
+<h1>Subject Mastery Progress</h1>
+<p id="course-name-display">No course created yet</p>
+</header>
+
+<main>
+<section class="card">
+<h2>Overall Progress</h2>
+
+<div class="bar">
+<div class="fill" id="fill"></div>
+</div>
+
+<p class="percent-text" id="percent">0%</p>
+<p id="summary"></p>
+<br>
+<button class="btn" id="reset-btn" type="button">Reset Progress</button>
+<button class="btn" id="delete-course-btn" type="button" style="background:#b02a20;">Delete Course</button>
+</section>
+</main>
+
+  <footer>
+  <p>Course Syllabus Tracking System</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
